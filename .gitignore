@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class echonumber
+{
+	private static Scanner input;
+
+	public static void main( String [] args )
+	{
+		input = new Scanner( System.in );
+	
+		int number1;
+		int number2;
+		int sum;
+		int division;
+		int multiply;
+		int subtract;
+		int mod;
+		System.out.print( "enter first integer: ");
+		number1 = input.nextInt() ;
+	
+		System.out.print( "enter second integer: ");
+		number2 = input.nextInt() ;
+	
+		System.out.printf( "Hello, you enter %d", number1 );
+		System.out.printf( " and %d\n", number2 );
+		
+		sum = number1 + number2;
+		division = number1 / number2;
+		multiply = number1 * number2;
+		subtract = number1 - number2;
+		mod = number1 % number2;
+		
+		System.out.printf( "sum is %d\n", sum);
+		System.out.printf( "division is %d\n", division);
+		System.out.printf( "multiply is %d\n", multiply );
+		System.out.printf( "subtraction is %d\n", subtract);
+		System.out.printf( "remainder is %d\n", mod);
+	}
+}	
