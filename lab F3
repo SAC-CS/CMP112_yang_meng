@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class ifelsewithBreakfast
+{
+	
+	public static void main(String[] args)
+	{
+	
+		Scanner input = new Scanner (System.in);
+		
+		int thirsty;
+		int breakfast;
+		
+		System.out.printf( "Hungry\n");
+		System.out.printf( "Get in line\n");
+		System.out.printf( "buy lunch\n");
+		
+		System.out.println( "Are you thirsty? 1 for yes 0 for no");
+		thirsty = input.nextInt();
+		
+			if (thirsty == 1)
+			{ 
+				System.out.println( " if had breakfast otherwise 1 for yes or 0 for no\n");
+				breakfast = input.nextInt();
+						if (breakfast == 1)
+						{
+							System.out.println( "get a diet coke\n");
+						}
+						else
+						{
+							System.out.println( "get a coke");
+						}
+			}
+			else
+			{
+			System.out.println( "get water");
+			}
+		System.out.printf( "Eat lunch\n");
+		System.out.printf( "return tray\n");
+		System.out.printf( "leave\n");
+	
+	}
+
+}
