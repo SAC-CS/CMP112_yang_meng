@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class swtichstatement 
+{
+	
+	public static void main(String[] args)
+	{
+	
+		Scanner input = new Scanner (System.in);
+		
+		int thirsty;
+		int breakfast;
+		
+		
+		System.out.printf( "Hungry\n");
+		System.out.printf( "Get in line\n");
+		System.out.printf( "buy lunch\n");
+		
+		System.out.println( "Are you thirsty? 1 for yes 0 for no");
+		thirsty = input.nextInt();
+		
+		switch(thirsty)
+		{
+		case 0:
+			System.out.println("get water");
+			break;
+			
+		case 1:
+			System.out.println(" did you have breakfast 1 for yes 0 for no");
+			breakfast = input.nextInt();
+			
+				switch(breakfast)
+				{
+				case 0:
+					System.out.println("get coke");
+					break;
+					
+				case 1:
+					System.out.println("get a diet coke");
+					break;
+				}
+			break;
+		}
+		
+				
+			
+		System.out.printf( "Eat lunch\n");
+		System.out.printf( "return tray\n");
+		System.out.printf( "leave\n");
+	
+	}
+
+}
