@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Guess_a_Number 
+{
+
+	public static void main(String[] args)
+	{
+		int random1;
+		int answer;
+		Scanner input = new Scanner(System.in);
+		
+		random1 = 0 + (int)(Math.random()*10);
+		
+		System.out.println("guess the number between 0 and 10");
+		answer = input.nextInt();
+		
+		if(answer != 0)
+		{
+			if (answer > (random1))
+			{
+				System.out.printf("too high\n the system number is %d \n thanks for playing", random1);
+				
+			}
+			else if(answer < (random1))
+			{
+				System.out.printf("too low\n the system number is %d \n thanks for playing", random1);
+			
+			}
+		}
+				
+		if (answer == 0)
+		{
+			System.out.println("congrats you guessed correctly\n thanks for playing");
+		}
+
+	}
+
+}
