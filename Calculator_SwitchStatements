@@ -1,7 +1,6 @@
-
 import java.util.Scanner;
 
-public class Calulator_if_else
+public class Calulator_SwitchStatements
 {
 	
 
