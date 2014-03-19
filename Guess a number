@@ -13,7 +13,7 @@ public class Guess_a_Number
 		System.out.println("guess the number between 0 and 10");
 		answer = input.nextInt();
 		
-		if(answer != 0)
+		if(answer != random1)
 		{
 			if (answer > (random1))
 			{
