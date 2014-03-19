@@ -27,7 +27,7 @@ public class Guess_a_Number
 			}
 		}
 				
-		if (answer == 0)
+		if (answer == random1)
 		{
 			System.out.println("congrats you guessed correctly\n thanks for playing");
 		}
