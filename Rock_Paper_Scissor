@@ -1,0 +1,90 @@
+import java.util.Scanner;
+import java.util.Random;
+public class rock_paper_scissor 
+{
+
+	private static Scanner input;
+
+	public static void main(String[] args)
+	{
+		int answer;
+		int random1; 
+		int Rock = 1;
+		int Paper = 2;
+		int Scissor = 3;
+
+		input = new Scanner(System.in);
+		
+		Random Generator = new Random();
+		random1 = 0 + (int)(Math.random()*(3-0)+1);
+		
+		
+		switch( random1 )
+		{
+		case 1:
+			Rock = 1;
+			break;
+			
+		case 2:
+			Paper=2;
+			break;
+		
+		case 3:
+			Scissor=3;
+			break;
+		}
+		
+		System.out.println("lets play rock, paper, scissors.\n Rock is 1, Paper is 2, and Scissor is 3.what is your choice");
+		answer = input.nextInt();
+		
+		if( answer == 1 )
+		{
+			if ( random1 == 2 )
+			{
+				System.out.printf("you lose\n the system choose Paper \n thanks for playing");
+				
+			}
+			else if(random1 == 3)
+			{
+				System.out.printf("you win\n the system choose Scissor \n thanks for playing");
+			
+			}
+			else if(random1 == 1 )
+			{
+				System.out.printf("we tied\n the system choose Rock \n thanks for playing");
+			}
+		}
+				
+		if (answer == 2 )
+		{
+			if (random1 == 1 )
+			{
+				System.out.printf("you win\n the system choose Rock\n thanks for playing");
+			}
+			else if(random1 == 2 )
+			{
+				System.out.printf("we tie\n the system choose Paper\n thanks for playing");
+			}
+			else if(random1 == 3 )
+			{
+				System.out.printf("you lose\n the system choose Scissor\n thanks for playing");
+			}
+		}
+		if (answer == 3)
+		{
+			if (random1 == 2 )
+			{
+				System.out.printf("you win\n the system choose Paper\n thanks for playing");
+			}
+			else if(random1 == 1 )
+			{
+				System.out.printf("you lose\n the system choose Rock\n thanks for playing");
+			}
+			else if (random1 == 3 )
+			{
+				System.out.printf("we tied\n the system choose Scissor\n thanks for playing");
+			}
+		}
+	}
+
+}
